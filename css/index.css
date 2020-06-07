@@ -1,7 +1,75 @@
-.navbar{
-    display: flex;
+*{
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1em;
+}
+ul{
     list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
 }
 .home{
-    margin-right: 100m;
+    font-weight: 300;
+    font-size: 1.4em;
 }
+.work{
+    padding-right: 5em;
+    font-weight: bold;
+    font-size: 1em;
+}
+.about{
+    font-weight: bold;
+    font-size: 1em;
+}
+.intro{
+    text-align: center;
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-bottom: 1em;
+}
+h1{
+    font-size: 4.5em;
+}
+#name{
+    color:#CAE7C1;
+}
+.projectbox{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center; 
+    padding: 1.5em;
+    margin-right: 10em;
+    margin-left: 10em;
+    margin-bottom: 2em;
+    background-color: #CAE7C1;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.image-placeholder {
+    background-color: #eee;
+    display: flex;
+    height: 15em;
+    margin: 1em;
+    width: 40em;
+}
+.image-placeholder > h4 {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+}
+h3{
+    font-size: 3em;
+    margin: 0;
+}
+
