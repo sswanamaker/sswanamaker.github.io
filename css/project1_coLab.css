@@ -1,0 +1,140 @@
+
+body *{
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1em;
+}
+p{
+    margin-bottom: .5em;
+}
+/* navigation bar */
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+.home{
+    font-weight: 300;
+    font-size: 1.4em;
+}
+.work{
+    padding-right: 5em;
+    font-weight: bold;
+    font-size: 1em;
+}
+.about{
+    font-weight: bold;
+    font-size: 1em;
+}
+/* top project banner */
+.projectbox{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center; 
+    padding: 1.5em;
+    margin:0;
+    margin-bottom: 2em;
+    background-color: #CAE7C1;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/* image place holder settings */
+.image-placeholder {
+    background-color: #eee;
+    display: flex;
+    height: 15em;
+    margin: 1em;
+    width: 40em;
+}
+.image-placeholder > h4 {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+}
+.char-placeholder{
+    background-color: #eee;
+    display: flex;
+    height: 20em;
+    margin: 1em;
+    width: 15em;
+}
+.char-placeholder > h4 {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+}
+h3{
+    font-size: 3em;
+    margin-bottom: .25em;
+    margin-top: 1em;
+}
+/* Overview */
+.overview{
+    display:flex;
+    justify-content: space-between;
+    border: solid;
+    border-color: #c6b7e9;
+    margin-right: 10em;
+    margin-left: 10em;
+    padding: .5em 2em;
+}
+.title{
+    text-decoration: underline;
+}
+/* give margins to text sections */
+.intro, .goal, .personas, .opening, .video, .prototype, .usability, .restrospective{
+    margin-left: 10em;
+    margin-right: 10em;
+}
+/* setting up the persona box */
+.personaBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #CAE7C1;
+    margin-bottom: 2em;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+}
+.aspects{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+/* setting up pictures for design charette */
+.charetteHold{
+    display:flex;
+    flex-direction: column;
+    background-color: #c6b7e9;
+    padding: 1em 5em;
+
+}
+.charetteHold p{
+    font-weight: bold;
+    margin-left: 2em;
+}
+.charette1, .charette2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* digital narrative */
+/* prototype */
+/*retrospective */

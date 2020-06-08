@@ -1,8 +1,12 @@
-*{
+body *{
     font-family: 'Roboto Slab', serif;
     color: black;
     font-size: 1em;
 }
+p{
+    margin-bottom: .5em;
+}
+/* navigation bar */
 ul{
     list-style: none;
     padding: 0;
@@ -14,6 +18,8 @@ a{
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    margin-bottom:2em;
+    padding: 1em;
 }
 .home{
     font-weight: 300;
@@ -28,6 +34,7 @@ a{
     font-weight: bold;
     font-size: 1em;
 }
+/* introduction */
 .intro{
     text-align: center;
     margin-right: 10em;
@@ -36,10 +43,12 @@ a{
 }
 h1{
     font-size: 4.5em;
+    margin-bottom: .5em;
 }
 #name{
     color:#CAE7C1;
 }
+/* project boxes */
 .projectbox{
     display: flex;
     flex-direction: row-reverse;
@@ -70,6 +79,7 @@ h1{
 }
 h3{
     font-size: 3em;
-    margin: 0;
+    margin-bottom: .25em;
+    margin-top: .25em;
 }
 
