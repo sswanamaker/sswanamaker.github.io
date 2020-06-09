@@ -41,6 +41,7 @@ a{
     display: flex;
     flex-direction: row-reverse;
     text-align: center; 
+    justify-content: space-evenly;
     padding: 1.5em;
     margin:0;
     margin-bottom: 2em;
@@ -50,7 +51,10 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+}
+.cover{
+    width:40em;
+    height: 20em;
 }
 /* image place holder settings */
 .image-placeholder {
@@ -65,13 +69,7 @@ a{
     text-align: center;
     width: 100%;
 }
-.char-placeholder{
-    background-color: #eee;
-    display: flex;
-    height: 20em;
-    margin: 1em;
-    width: 15em;
-}
+
 .char-placeholder > h4 {
     align-self: center;
     text-align: center;
@@ -141,12 +139,25 @@ h3{
     font-weight: bold;
     margin-left: 2em;
 }
+.char1{
+    height: 20em;
+    margin: 1em;
+    width: 15em;
+}
+.char2{
+    height: 20em;
+    width: 35em;
+}
 .charette1, .charette2{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 /* digital narrative */
+#link{
+    color: #c6b7e9;
+    font-weight: bolder;
+}
 /* prototype */
 /* usability */
 .outcome > h4{
