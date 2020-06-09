@@ -6,6 +6,7 @@ body *{
 }
 p{
     margin-bottom: .5em;
+    line-height: 1.6;
 }
 /* navigation bar */
 ul{
@@ -95,7 +96,7 @@ h3{
     text-decoration: underline;
 }
 /* give margins to text sections */
-.intro, .goal, .personas, .opening, .video, .prototype, .usability, .restrospective{
+.intro, .goal, .tenets, .personas, .scenarios, .opening, .video, .prototype, .usability, .new, .restrospective{
     margin-left: 10em;
     margin-right: 10em;
 }
@@ -106,6 +107,8 @@ h3{
     align-items: center;
     background-color: #CAE7C1;
     margin-bottom: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
 }
 .column{
     display: flex;
@@ -117,6 +120,14 @@ h3{
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 3em;
+}
+.aspects > h4{
+    font-weight: bold;
+}
+/* scenarios */
+.scenarios > h4 {
+    font-weight: bold;
+    margin-bottom: .5em;
 }
 /* setting up pictures for design charette */
 .charetteHold{
@@ -137,4 +148,9 @@ h3{
 }
 /* digital narrative */
 /* prototype */
+/* usability */
+.outcome > h4{
+    font-weight:bold;
+}
+
 /*retrospective */
