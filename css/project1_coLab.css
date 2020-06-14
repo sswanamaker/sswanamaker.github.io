@@ -8,6 +8,16 @@ p{
     margin-bottom: .5em;
     line-height: 1.6;
 }
+h2{
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
+}
+h3{
+    font-size: 3em;
+    margin-bottom: .25em;
+    margin-top: 1em;
+}
 /* navigation bar */
 ul{
     list-style: none;
@@ -56,30 +66,7 @@ a{
     width:40em;
     height: 20em;
 }
-/* image place holder settings */
-.image-placeholder {
-    background-color: #eee;
-    display: flex;
-    height: 15em;
-    margin: 1em;
-    width: 40em;
-}
-.image-placeholder > h4 {
-    align-self: center;
-    text-align: center;
-    width: 100%;
-}
 
-.char-placeholder > h4 {
-    align-self: center;
-    text-align: center;
-    width: 100%;
-}
-h3{
-    font-size: 3em;
-    margin-bottom: .25em;
-    margin-top: 1em;
-}
 /* Overview */
 .overview{
     display:flex;
@@ -94,7 +81,7 @@ h3{
     text-decoration: underline;
 }
 /* give margins to text sections */
-.intro, .goal, .tenets, .personas, .scenarios, .opening, .video, .prototype, .usability, .new, .restrospective{
+.intro, .goal, .tenets, .personas, .scenarios, .opening, .moodboard, .video, .prototype, .usability, .new, .style, .retrospectivetext{
     margin-left: 10em;
     margin-right: 10em;
 }
@@ -111,7 +98,7 @@ h3{
 .column{
     display: flex;
     flex-direction: column;
-    margin-left: 5em;
+    margin-left: 2em;
 }
 .aspects{
     display:flex;
@@ -121,6 +108,17 @@ h3{
 }
 .aspects > h4{
     font-weight: bold;
+}
+.persona1{
+    height: 20em;
+    margin: 1em;
+    width: 15em;
+    object-fit: cover;
+}
+.persona2{
+    height: 20em;
+    margin: 1em;
+    width: 15em;
 }
 /* scenarios */
 .scenarios > h4 {
@@ -133,7 +131,6 @@ h3{
     flex-direction: column;
     background-color: #c6b7e9;
     padding: 1em 5em;
-
 }
 .charetteHold p{
     font-weight: bold;
@@ -153,15 +150,82 @@ h3{
     flex-direction: row;
     align-items: center;
 }
+/*moodboard*/
+.mood{
+    width:40em;
+}
 /* digital narrative */
 #link{
     color: #c6b7e9;
     font-weight: bolder;
 }
 /* prototype */
+/* mobile prototypes */
+.mobile1{
+    display: flex;
+    flex-direction: column;
+}
+.mobileproto1{
+    display: flex;
+    flex-direction: row;
+}
+.proto1{
+    height: 50em;
+    width: 35em;
+    margin-top:.5em;
+    margin-bottom: 1em;
+}
+.conference{
+    height: 50em;
+    width: 30em;
+    margin-top:.5em;
+    margin-bottom: 1em;
+}
+/* desktop prototypes */
+.desktop1{
+    display: flex;
+    flex-direction: column;
+}
+.desktopproto1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c6b7e9;
+}
+.proto2{
+    width: 60em;
+    margin-bottom: 1em;
+    margin-top:.5em;
+}
 /* usability */
 .outcome > h4{
     font-weight:bold;
 }
+/* prototype 2 */
+/* mobile chat features */
+.chat, .mobileplus, .mobiletask, .desktask{
+    display: flex;
+    flex-direction: row;
+}
+.proto3, .proto5, .proto7, .proto8{
+    height: 50em;
+    width: 35em;
+    margin-top:.5em;
+}
+.chatdesk, .deskplus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c6b7e9;
+}
+.proto4, .proto6{
+    width: 60em;
+    margin-bottom: 1em;
+    margin-top:.5em;
 
+}
 /*retrospective */
+.retrospective{
+    margin:0;
+    background-color: #CAE7C1;
+}
