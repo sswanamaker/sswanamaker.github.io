@@ -171,7 +171,7 @@ a{
 }
 .proto1{
     height: 50em;
-    width: 35em;
+    width: 30em;
     margin-top:.5em;
     margin-bottom: 1em;
 }
@@ -197,10 +197,7 @@ a{
     margin-bottom: 1em;
     margin-top:.5em;
 }
-/* usability */
-.outcome > h4{
-    font-weight:bold;
-}
+
 /* prototype 2 */
 /* mobile chat features */
 .chat, .mobileplus, .mobiletask, .desktask{
@@ -209,14 +206,13 @@ a{
 }
 .proto3, .proto5, .proto7, .proto8{
     height: 50em;
-    width: 35em;
+    width: 30em;
     margin-top:.5em;
 }
 .chatdesk, .deskplus{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #c6b7e9;
 }
 .proto4, .proto6{
     width: 60em;
@@ -229,3 +225,5 @@ a{
     margin:0;
     background-color: #CAE7C1;
 }
+
+/* tablet screens */
