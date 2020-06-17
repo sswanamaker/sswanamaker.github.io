@@ -4,6 +4,13 @@ body *{
     color: black;
     font-size: 1em;
 }
+#wrapper{
+    margin-right: auto; 
+    margin-left:  auto;
+
+    padding-right: .5em; 
+    padding-left:  .5em;
+}
 p{
     margin-bottom: .5em;
     line-height: 1.6;
@@ -30,21 +37,21 @@ a{
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2em;
+    margin-bottom:2em;
     padding: 1em;
 }
 .home{
     font-weight: 300;
     font-size: 1.4em;
 }
-.work{
-    padding-right: 5em;
+.nav{
+    display:flex;
+    justify-content: space-between;
     font-weight: bold;
     font-size: 1em;
 }
-.about{
-    font-weight: bold;
-    font-size: 1em;
+.work{
+    padding-right: 3em;
 }
 /* top project banner */
 .projectbox{
@@ -53,7 +60,6 @@ a{
     text-align: center; 
     justify-content: space-evenly;
     padding: 1.5em;
-    margin:0;
     margin-bottom: 2em;
     background-color: #CAE7C1;
 }
@@ -225,3 +231,54 @@ a{
 }
 
 /* tablet screens */
+/* phone */
+@media only screen and (max-device-width: 480px){
+    /* navigation */
+    .navbar{
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:2em;
+        padding: 1em;
+    }
+    .home{
+        font-weight: 300;
+        font-size: 1.4em;
+    }
+    .nav{
+        display:flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .work{
+        padding-right: 1em;
+    }
+    /* top banner */
+    .projectbox{
+        flex-direction: column-reverse;
+        text-align: center; 
+        margin-bottom: 1em;
+        align-items: center;
+    }
+    .cover{
+        width:15em;
+        height: 10em;
+    }
+    h3{
+        margin-top: 0em;
+    }
+    /* Overview */
+    .overview{
+        flex-direction: column;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    /* give margins to text sections */
+    .intro, .goal, .tenets, .personas, .scenarios, .opening, .moodboard, .video, .prototype, .usability, .new, .style, .retrospectivetext{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    /* personas */
+}
