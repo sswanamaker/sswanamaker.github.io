@@ -142,6 +142,9 @@ a{
     font-weight: bold;
     margin-left: 2em;
 }
+#charlink{
+    display:none;
+}
 .char1{
     height: 20em;
     margin: 1em;
@@ -281,4 +284,60 @@ a{
         margin-right: 1em;
     }
     /* personas */
+    .personaBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #CAE7C1;
+        margin-bottom: 2em;
+        padding-top: 1em;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .aspects{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+    .aspects > h4{
+        font-weight: bold;
+    }
+    .persona1{
+        height: 10em;
+        width: 15em;
+        object-fit: cover;
+    }
+    .persona2{
+        height: 10em;
+        margin: 1em;
+        width: 15em;
+        object-fit: cover;
+    }
+    /* charette */
+    .charetteHold{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #c6b7e9;
+        padding: .5em;
+    }
+    #charlink{
+        display: block;
+        font-weight: bold;
+    }
+    .char1{
+        display: none;
+    }
+    .char2{
+        display: none;
+    }
+    .charette1, .charette2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
