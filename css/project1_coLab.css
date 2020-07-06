@@ -142,7 +142,7 @@ a{
     font-weight: bold;
     margin-left: 2em;
 }
-#charlink{
+.charlink{
     display:none;
 }
 .char1{
@@ -234,6 +234,184 @@ a{
 }
 
 /* tablet screens */
+@media only screen and (max-device-width: 1024px){
+       /* navigation */
+       .navbar{
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:2em;
+        padding: 1em;
+    }
+    .home{
+        font-weight: 300;
+        font-size: 1.4em;
+    }
+    .nav{
+        display:flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .work{
+        padding-right: 1em;
+    }
+    /* top banner */
+    .projectbox{
+        flex-direction: column-reverse;
+        text-align: center; 
+        margin-bottom: 1em;
+        align-items: center;
+    }
+    .cover{
+        width:15em;
+        height: 10em;
+    }
+    h3{
+        margin-top: 0em;
+    }
+    /* Overview */
+    .overview{
+        flex-direction: column;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    /* give margins to text sections */
+    .intro, .goal, .tenets, .personas, .scenarios, .opening, .moodboard, .video, .prototype, .usability, .new, .style, .retrospectivetext{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    /* personas */
+    .personaBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #CAE7C1;
+        margin-bottom: 2em;
+        padding-top: 1em;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .aspects{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+    .aspects > h4{
+        font-weight: bold;
+    }
+    .persona1{
+        height: 10em;
+        width: 15em;
+        object-fit: cover;
+    }
+    .persona2{
+        height: 10em;
+        margin: 1em;
+        width: 15em;
+        object-fit: cover;
+    }
+    /* charette */
+    .charetteHold{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #c6b7e9;
+        padding: .5em;
+    }
+    .view{
+        display: none;
+    }
+    .charlink{
+        display: block;
+        font-weight: bold;
+    }
+    .charette1, .charette2{
+        display: none;
+    }
+    /* mood board */
+    .mood{
+        width:20em;
+    }
+    /* prototype */
+    /* mobile prototypes */
+    .mobile1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobileproto1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .proto1{
+        height: 30em;
+        width: 15em;
+        margin-top:.5em;
+        margin-bottom: 1em;
+    }
+    .conference{
+        height: 30em;
+        width: 15em;
+        margin-top:.5em;
+        margin-bottom: 1em;
+    }
+    .chart{
+        width: 40em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+    /* desktop prototypes */
+    .desktop1{
+        display: flex;
+        flex-direction: column;
+    }
+    .desktopproto1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proto2{
+        width: 40em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+
+    /* prototype 2 */
+    /* mobile chat features */
+    .chat, .mobileplus, .mobiletask, .desktask{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .proto3, .proto5, .proto7, .proto8{
+        height: 30em;
+        width: 15em;
+        margin-top:.5em;
+    }
+    .chatdesk, .deskplus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proto4, .proto6{
+        width: 40em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+    .stylepic{
+        width: 40em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+}
 /* phone */
 @media only screen and (max-device-width: 480px){
     /* navigation */
@@ -325,19 +503,90 @@ a{
         background-color: #c6b7e9;
         padding: .5em;
     }
-    #charlink{
+    .view{
+        display: none;
+    }
+    .charlink{
         display: block;
         font-weight: bold;
     }
-    .char1{
-        display: none;
-    }
-    .char2{
-        display: none;
-    }
     .charette1, .charette2{
+        display: none;
+    }
+    /* mood board */
+    .mood{
+        width:20em;
+    }
+    /* prototype */
+    /* mobile prototypes */
+    .mobile1{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+    }
+    .mobileproto1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proto1{
+        height: 30em;
+        width: 15em;
+        margin-top:.5em;
+        margin-bottom: 1em;
+    }
+    .conference{
+        height: 30em;
+        width: 15em;
+        margin-top:.5em;
+        margin-bottom: 1em;
+    }
+    .chart{
+        width: 20em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+    /* desktop prototypes */
+    .desktop1{
+        display: flex;
+        flex-direction: column;
+    }
+    .desktopproto1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proto2{
+        width: 20em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+
+    /* prototype 2 */
+    /* mobile chat features */
+    .chat, .mobileplus, .mobiletask, .desktask{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proto3, .proto5, .proto7, .proto8{
+        height: 30em;
+        width: 15em;
+        margin-top:.5em;
+    }
+    .chatdesk, .deskplus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .proto4, .proto6{
+        width: 20em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+    .stylepic{
+        width: 20em;
+        margin-bottom: 1em;
+        margin-top:.5em;
     }
 }
