@@ -85,7 +85,6 @@ a{
     text-decoration: underline;
 }
 .heading{
-    display: flex;
     text-align: center;
 }
 /*summary*/
@@ -119,9 +118,10 @@ a{
     flex-direction: column;
     align-items: center;
 }
+.flowbox{
+    text-align: center;
+}
 .flow{
-    display: flex;
-    align-items: center;
     height: 20em;
     width: auto;
 }
@@ -141,4 +141,36 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.specbox{
+    text-align: center;
+}
+.persona1, .persona2{
+    height: auto;
+    width: 18em;
+}
+
+/*survey*/
+h4{
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+.figure{
+    text-align: center;
+}
+.figure1, .figure2, .figure3{
+    height:auto;
+    width: 18em;
+}
+.caption{
+    font-size: .5em;
+    text-align: left;
+}
+
+/*discussion*/
+.subhead{
+    font-style: italic;
+    font-size: 1.5em;
 }
