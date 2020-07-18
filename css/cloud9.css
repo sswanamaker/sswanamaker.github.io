@@ -200,6 +200,25 @@ h4{
 
 /*tablet*/
 @media only screen and (min-width: 600px){
+    .projectbox{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center; 
+        justify-content: space-evenly;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        background-color: #CAE7C1;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cover{
+        width:20em;
+        height: auto;
+        margin-right: 1em;
+    }
     /*observation*/
     .diagram{
         height: 20em;
@@ -251,8 +270,8 @@ h4{
         align-items: center;
     }
     .cover{
-        width:40em;
-        height: 20em;
+        width:30em;
+        height: auto;
     }
     /* Overview */
     .overview{
