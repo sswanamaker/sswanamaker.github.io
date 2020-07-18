@@ -1,0 +1,111 @@
+body *{
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1em;
+}
+#wrapper{
+    margin-right: auto; 
+    margin-left:  auto;
+
+    padding-right: .5em; 
+    padding-left:  .5em;
+}
+p{
+    margin-bottom: .5em;
+    line-height: 1.6;
+}
+h2{
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
+}
+h3{
+    font-size: 3em;
+    margin-bottom: .25em;
+    margin-top: .5em;
+}
+/* navigation */
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:2em;
+    padding-top: 1em;
+    
+}
+.home{
+    font-weight: 300;
+    font-size: 1em;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1em;
+}
+.work{
+    padding-right: 3em;
+}
+/* top project banner */
+.projectbox{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center; 
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    background-color: #CAE7C1;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cover{
+    width:15em;
+        height: 10em;
+}
+/* Overview */
+.overview{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid;
+    border-color: #c6b7e9;
+    padding: .5em;
+}
+.title{
+    text-decoration: underline;
+}
+.heading{
+    text-align: center;
+}
+/*Objective*/
+.contentitems{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: .5em;
+    background-color: #c6b7e9;
+}
+li{
+    padding: .5em;
+}
+.indent{
+    margin-left: 1em;
+}
+/*Content Inventory*/
+.pic{
+    text-align: center;
+}
+.inventpic{
+    height: auto;
+    width: 15em;
+}
