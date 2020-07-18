@@ -69,8 +69,8 @@ a{
     align-items: center;
 }
 .cover{
-    width:40em;
-    height: 20em;
+    width:30em;
+    height: auto;
 }
 
 /* Overview */

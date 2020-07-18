@@ -109,6 +109,31 @@ h1{
     background-color: #c6b7e9;
 }
 
+/*tablet*/
+@media only screen and (min-width: 600px){
+    /* project boxes */
+    .projectbox{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center; 
+        justify-content: space-evenly;
+        padding: 1em;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-bottom: 2em;
+        background-color: #CAE7C1;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cover{
+        height:auto;
+        width:20em;
+        margin:1em;
+    }
+}
 /*desktop*/
 @media only screen and (min-width: 800px){
     /*navbar*/
@@ -140,7 +165,7 @@ h1{
         align-items: center;
     }
     .cover{
-        height:15em;
+        height:auto;
         width:30em;
         margin:1em;
     }
