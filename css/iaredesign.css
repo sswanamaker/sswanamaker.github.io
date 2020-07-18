@@ -153,6 +153,9 @@ li{
     height: 15em;
     width: auto;
 }
+.chalkpic{
+    text-align: center;
+}
 /*wireframe*/
 .wirepic{
     height: 15em;
@@ -168,4 +171,149 @@ li{
     font-size: 2.5em;
     font-weight: bolder;
     text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+    .projectbox{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center; 
+        justify-content: space-evenly;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        background-color: #CAE7C1;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cover{
+        width:20em;
+        height: auto;
+        margin-right: 1em;
+    }
+    /* Overview */
+    .overview{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid;
+        border-color: #c6b7e9;
+        padding: .5em;
+        
+    }
+    .title{
+        text-decoration: underline;
+    }
+    .heading{
+        text-align: center;
+    }
+    /*content inventory*/
+    .inventpic{
+        height: auto;
+        width: 30em;
+    }
+    /*Card Sort 1*/
+    .card1pic, .card2pic, .card3pic{
+        height: auto;
+        width: 30em;
+    }
+    /*treejack*/
+    .tree1pic, .tree2pic, .tree3pic{
+        height: auto;
+        width: 30em;
+    }
+    /*chalkmark*/
+    .chalkpic{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .chalktestpic{
+        height: 15em;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 800px){
+    /* top project banner */
+    .home{
+        font-weight: 300;
+        font-size: 1.4em;
+    }
+    .projectbox{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center; 
+        justify-content: space-evenly;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        background-color: #CAE7C1;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cover{
+        width:30em;
+        height: auto;
+    }
+    /*text format*/
+    .heading{
+        text-align: initial;
+    }
+    .overview, .projover, .objective, .coninv, .card1, .card2, .card3, .iatest, .sitemap, .iatest2, .wireframe,  .start, .end{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    /*content inventory*/
+    .inventpic{
+        height: auto;
+        width: 40em;
+    }
+    /*Card Sort 1*/
+    .card1pic, .card2pic, .card3pic{
+        height: auto;
+        width: 40em;
+    }
+    /*treejack*/
+    .tree1pic, .tree2pic, .tree3pic{
+        height: auto;
+        width: 40em;
+    }
+    /*sitemap*/
+    .sitemap1, .sitemap2{
+        height: auto;
+        width: 30em;
+    }
+    /*chalkmark*/
+    .chalkpic{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .chalktestpic{
+        height: 15em;
+        width: auto;
+    }
+    /*wireframe*/
+    .wirepic{
+        height: 20em;
+        width: auto;
+    }
+    /*retrospective*/
+    .retro > h3{
+        font-size: 2.5em;
+        font-weight: bolder;
+        text-align: initial;
+    }
+    .retro{
+        margin-left: 0em;
+        margin-right: 0em; 
+        margin-bottom: -1em;
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-bottom: 1em;
+    }
 }

@@ -219,6 +219,22 @@ h4{
         height: auto;
         margin-right: 1em;
     }
+    /* Overview */
+    .overview{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid;
+        border-color: #c6b7e9;
+        padding: .5em;
+        
+    }
+    .title{
+        text-decoration: underline;
+    }
+    .heading{
+        text-align: center;
+    }
     /*observation*/
     .diagram{
         height: 20em;
@@ -291,7 +307,7 @@ h4{
     .heading{
         text-align: initial;
     }
-    .summary, .observation, .start, .end, .interviews, .surveys, .discussion, .retro{
+    .summary, .observation, .start, .end, .interviews, .surveys, .discussion{
         margin-left: 10em;
         margin-right: 10em;
     }
@@ -304,5 +320,13 @@ h4{
         font-size: 2.5em;
         font-weight: bolder;
         text-align: initial;
+    }
+    .retro{
+        margin-left: 0em;
+        margin-right: 0em; 
+        margin-bottom: -1em;
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-bottom: 1em;
     }
 }
