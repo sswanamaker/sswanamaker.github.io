@@ -34,10 +34,11 @@ a{
 }
 .navbar{
     display: flex; 
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-bottom:2em;
-    padding: 1em;
+    padding-top: 1em;
+    
 }
 .home{
     font-weight: 300;
@@ -88,6 +89,12 @@ a{
     text-align: center;
 }
 /*summary*/
+.report{
+    font-size: 1.5em;  
+}
+.report:hover{
+    color: #CAE7C1;
+}
 .implications{
     margin-left: 1em;
     margin-right: 1em;
@@ -157,6 +164,10 @@ h4{
     margin-top: .5em;
     margin-bottom: .5em;
 }
+.surveybox{
+    background-color: #CAE7C1;
+    padding: .5em;
+}
 .figure{
     text-align: center;
 }
@@ -173,4 +184,102 @@ h4{
 .subhead{
     font-style: italic;
     font-size: 1.5em;
+}
+
+/*retrospective*/
+.retro{
+    background-color: #c6b7e9;
+    padding-right: .5em;
+    padding-left: .5em;
+}
+.retro > h3{
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/*tablet*/
+@media only screen and (min-width: 600px){
+    /*observation*/
+    .diagram{
+        height: 20em;
+        width: auto;
+    }
+    .flow{
+        height: 40em;
+        width: auto;
+    }
+    /*interview*/
+    .diagrami{
+        height: auto;
+        width: 15em;
+        margin:.5em;
+    }
+
+    .diagram5, .diagram6, .diagram7{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .persona1, .persona2{
+        height: auto;
+        width: 40em;
+    }
+    .figure1, .figure2, .figure3{
+        height:auto;
+        width: 30em;
+    }
+}
+@media only screen and (min-width: 800px){
+    /* top project banner */
+    .projectbox{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center; 
+        justify-content: space-evenly;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        background-color: #CAE7C1;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cover{
+        width:40em;
+        height: 20em;
+    }
+    /* Overview */
+    .overview{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid;
+        border-color: #c6b7e9;
+        margin-right: 10em;
+        margin-left: 10em;
+        padding: .5em 2em;
+    }
+    .title{
+        text-decoration: underline;
+    }
+    /*text format*/
+    .heading{
+        text-align: initial;
+    }
+    .summary, .observation, .start, .end, .interviews, .surveys, .discussion, .retro{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    .implications{
+        margin-left: 5em;
+        margin-right: 5em;
+        background-color: #c6b7e9;
+    }
+    .retro > h3{
+        font-size: 2.5em;
+        font-weight: bolder;
+        text-align: initial;
+    }
 }
