@@ -232,6 +232,10 @@ h4{
 }
 @media only screen and (min-width: 800px){
     /* top project banner */
+    .home{
+        font-weight: 300;
+        font-size: 1.4em;
+    }
     .projectbox{
         display: flex;
         flex-direction: row-reverse;

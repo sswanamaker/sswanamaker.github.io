@@ -12,8 +12,19 @@ body *{
 }
 p{
     margin-bottom: .5em;
+    line-height: 1.6;
 }
-/* navigation bar */
+h2{
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
+}
+h3{
+    font-size: 3em;
+    margin-bottom: .25em;
+    margin-top: .5em;
+}
+/* navigation */
 ul{
     list-style: none;
     padding: 0;
@@ -26,11 +37,12 @@ a{
     justify-content: space-between;
     align-items: center;
     margin-bottom:2em;
-    padding: 1em;
+    padding-top: 1em;
+    
 }
 .home{
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 .nav{
     display:flex;
@@ -41,18 +53,18 @@ a{
 .work{
     padding-right: 3em;
 }
- 
 /* introduction */
 .intro{
-    margin-right: 10em;
-    margin-left: 10em;
+    text-align: center;
+    margin-right: 1em;
+    margin-left: 1em;
     margin-bottom: 1em;
 }
 .name{
     text-align: center;
 }
 h1{
-    font-size: 4.5em;
+    font-size: 3em;
     margin-bottom: .5em;
 }
 #name{
@@ -61,24 +73,24 @@ h1{
 /* project boxes */
 .projectbox{
     display: flex;
-    flex-direction: row-reverse;
-    text-align: center; 
+    flex-direction: column-reverse;
     justify-content: space-evenly;
-    padding: 1.5em;
-    margin-right: 10em;
-    margin-left: 10em;
+    text-align: center; 
+    align-items: center;
+    padding: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
     margin-bottom: 2em;
     background-color: #CAE7C1;
+}
+.cover{
+    height:10em;
+    width:15em;
 }
 .text{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.cover{
-    height:15em;
-    width:30em;
-    margin:1em;
 }
 .image-placeholder {
     background-color: #eee;
@@ -92,89 +104,44 @@ h1{
     text-align: center;
     width: 100%;
 }
-h3{
-    font-size: 3em;
-    margin-bottom: .25em;
-    margin-top: .25em;
-}
 /* project 1 */
 .project1:hover{
     background-color: #c6b7e9;
 }
-/* tablet screens */
-@media only screen and (max-device-width: 768px){
-    .intro{
-        margin-right: 3em;
-        margin-left: 3em;
-    }
-    .projectbox{
-        padding: 1.5em;
-        margin-right: 3em;
-        margin-left: 3em;
-        margin-bottom: 2em;
-        background-color: #CAE7C1;
-    }
-    .cover{
-        height:15em;
-        width:20em;
-        margin:1em;
-    }
-}
-/* phone */
-@media only screen and (max-device-width: 480px){
-    /* navigation bar */
-    .navbar{
-        display: flex; 
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom:2em;
-        padding: 1em;
-    }
+
+/*desktop*/
+@media only screen and (min-width: 800px){
+    /*navbar*/
     .home{
         font-weight: 300;
         font-size: 1.4em;
     }
-    .nav{
-        display:flex;
-        justify-content: space-between;
-        font-weight: bold;
-        font-size: 1em;
-    }
-    .work{
-        padding-right: 1em;
-    }
     /* introduction */
     .intro{
-        text-align: center;
-        margin-right: 1em;
-        margin-left: 1em;
+        margin-right: 10em;
+        margin-left: 10em;
         margin-bottom: 1em;
-    }
-    h1{
-        font-size: 3em;
-        margin-bottom: .5em;
     }
     /* project boxes */
     .projectbox{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
+        text-align: center; 
         justify-content: space-evenly;
-        
-        align-items: center;
-        padding: 1em;
-        margin-right: 1em;
-        margin-left: 1em;
+        padding: 1.5em;
+        margin-right: 10em;
+        margin-left: 10em;
         margin-bottom: 2em;
         background-color: #CAE7C1;
-    }
-    .cover{
-        height:10em;
-        width:15em;
     }
     .text{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
+    .cover{
+        height:15em;
+        width:30em;
+        margin:1em;
+    }
 }
