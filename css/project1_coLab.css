@@ -1,4 +1,3 @@
-
 body *{
     font-family: 'Roboto Slab', serif;
     color: black;
@@ -15,17 +14,18 @@ p{
     margin-bottom: .5em;
     line-height: 1.6;
 }
-h2{
-    font-size: 2em;
-    text-decoration: underline;
-    margin-bottom: .5em;
-}
 h3{
     font-size: 3em;
     margin-bottom: .25em;
-    margin-top: 1em;
+    margin-top: .5em;
 }
-/* navigation bar */
+h4{
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+/* navigation */
 ul{
     list-style: none;
     padding: 0;
@@ -38,11 +38,12 @@ a{
     justify-content: space-between;
     align-items: center;
     margin-bottom:2em;
-    padding: 1em;
+    padding-top: 1em;
+    
 }
 .home{
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 .nav{
     display:flex;
@@ -56,11 +57,12 @@ a{
 /* top project banner */
 .projectbox{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     text-align: center; 
     justify-content: space-evenly;
+    align-items: center;
     padding: 1.5em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     background-color: #CAE7C1;
 }
 .text{
@@ -69,232 +71,321 @@ a{
     align-items: center;
 }
 .cover{
-    width:30em;
-    height: auto;
+    width:15em;
+        height: 10em;
 }
-
 /* Overview */
 .overview{
     display:flex;
+    flex-direction: column;
     justify-content: space-between;
     border: solid;
     border-color: #c6b7e9;
-    margin-right: 10em;
-    margin-left: 10em;
-    padding: .5em 2em;
+    padding: .5em;
 }
 .title{
     text-decoration: underline;
 }
-/* give margins to text sections */
-.intro, .goal, .tenets, .personas, .scenarios, .opening, .moodboard, .video, .prototype, .usability, .new, .style, .retrospectivetext{
-    margin-left: 10em;
-    margin-right: 10em;
+.heading{
+    text-align: center;
 }
-/* setting up the persona box */
+/* design tenants*/
+.tenbox{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: .5em;
+    background-color: #c6b7e9;
+}
+/* personas */
 .personaBox{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: #CAE7C1;
     margin-bottom: 2em;
-    padding-right: 2em;
-    padding-top: 1em;
+    padding: .5em;
 }
 .column{
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
+    text-align: center;
 }
 .aspects{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 .aspects > h4{
     font-weight: bold;
 }
 .persona1{
-    height: 20em;
-    margin: 1em;
+    height: 10em;
     width: 15em;
     object-fit: cover;
 }
 .persona2{
-    height: 20em;
+    height: 10em;
     margin: 1em;
     width: 15em;
+    object-fit: cover;
 }
-/* scenarios */
-.scenarios > h4 {
-    font-weight: bold;
-    margin-bottom: .5em;
-}
-/* setting up pictures for design charette */
+/* charette */
 .charetteHold{
     display:flex;
     flex-direction: column;
+    align-items: center;
     background-color: #c6b7e9;
-    padding: 1em 5em;
+    padding: .5em;
 }
-.charetteHold p{
-    font-weight: bold;
-    margin-left: 2em;
+.view{
+    display: none;
 }
 .charlink{
-    display:none;
-}
-.char1{
-    height: 20em;
-    margin: 1em;
-    width: 15em;
-}
-.char2{
-    height: 20em;
-    width: 35em;
+    display: block;
+    font-weight: bold;
 }
 .charette1, .charette2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: none;
 }
-/*moodboard*/
+/* mood board */
+.moodbox{
+    text-align: center;
+}
 .mood{
-    width:40em;
+    width:20em;
+    height: auto;
 }
-/* digital narrative */
+/*video*/
 #link{
-    color: #c6b7e9;
-    font-weight: bolder;
+    color: #CAE7C1; 
 }
-/* prototype */
 /* mobile prototypes */
-.mobile1{
-    display: flex;
-    flex-direction: column;
-}
 .mobileproto1{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CAE7C1;
 }
 .proto1{
-    height: 50em;
-    width: 30em;
+    height: auto;
+    width: 15em;
     margin-top:.5em;
     margin-bottom: 1em;
 }
 .conference{
-    height: 50em;
-    width: 30em;
+    height: auto;
+    width: 15em;
     margin-top:.5em;
     margin-bottom: 1em;
 }
 /* desktop prototypes */
-.desktop1{
-    display: flex;
-    flex-direction: column;
-}
 .desktopproto1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #CAE7C1;
 }
 .proto2{
-    width: 60em;
+    height: auto;
+    width: 15em;
     margin-bottom: 1em;
     margin-top:.5em;
 }
-
-/* prototype 2 */
-/* mobile chat features */
+/*usability*/
+.chartbox{
+    text-align: center;
+}
+.chart{
+    height: auto;
+    width: 15em;
+    margin-bottom: 1em;
+    margin-top:.5em;
+}
+.outbox{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: .5em;
+    background-color: #c6b7e9;
+}
+/* hi-fi prototype */
 .chat, .mobileplus, .mobiletask, .desktask{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CAE7C1;
 }
 .proto3, .proto5, .proto7, .proto8{
-    height: 50em;
-    width: 30em;
+    height: auto;
+    width: 15em;
+    margin-bottom: 1em;
     margin-top:.5em;
 }
 .chatdesk, .deskplus{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #CAE7C1;
 }
 .proto4, .proto6{
-    width: 60em;
+    height: auto;
+    width: 15em;
     margin-bottom: 1em;
     margin-top:.5em;
 }
-/*retrospective */
-.retrospective{
-    margin:0;
-    background-color: #CAE7C1;
+/* style tile */
+.stylebox{
+    text-align: center;
+}
+.stylepic{
+    height: auto;
+    width: 15em;
+    margin-bottom: 1em;
+    margin-top:.5em;
+}
+/*retrospective*/
+.retro{
+    background-color: #c6b7e9;
+    margin-bottom: -1em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-bottom: 1em;
+}
+.retro > h3{
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
 }
 
-/* tablet screens */
-@media only screen and (max-device-width: 1024px){
-       /* navigation */
-       .navbar{
-        display: flex; 
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom:2em;
-        padding: 1em;
-    }
-    .home{
-        font-weight: 300;
-        font-size: 1.4em;
-    }
-    .nav{
-        display:flex;
-        justify-content: space-between;
-        font-weight: bold;
-        font-size: 1em;
-    }
-    .work{
-        padding-right: 1em;
-    }
-    /* top banner */
+/*tablet*/
+@media only screen and (min-width: 600px){
     .projectbox{
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: row-reverse;
         text-align: center; 
-        margin-bottom: 1em;
+        justify-content: space-evenly;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        background-color: #CAE7C1;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
     .cover{
-        width:15em;
-        height: 10em;
-    }
-    h3{
-        margin-top: 0em;
+        width:20em;
+        height: auto;
+        margin-right: 1em;
     }
     /* Overview */
     .overview{
-        flex-direction: column;
-        margin-right: 1em;
-        margin-left: 1em;
-        margin-bottom: 1em;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid;
+        border-color: #c6b7e9;
+        padding: .5em;
+        
     }
-    /* give margins to text sections */
-    .intro, .goal, .tenets, .personas, .scenarios, .opening, .moodboard, .video, .prototype, .usability, .new, .style, .retrospectivetext{
-        margin-left: 1em;
-        margin-right: 1em;
+    .title{
+        text-decoration: underline;
     }
-    /* personas */
-    .personaBox{
+    .heading{
+        text-align: center;
+    }
+    /* mobile prototypes */
+    .mobileproto1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #CAE7C1;
+    }
+    /* desktop prototypes */
+    .desktopproto1{
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #CAE7C1;
+    }
+    .proto2{
+        height: auto;
+        width: 30em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+    /*usability*/
+    .chartbox{
+        text-align: center;
+    }
+    .chart{
+        height: auto;
+        width: 30em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+    /* hi-fi prototype */
+    .chat, .mobileplus, .mobiletask, .desktask{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #CAE7C1;
+    }
+    .proto4, .proto6{
+        height: auto;
+        width: 30em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+    /* style tile */
+    .stylebox{
+        text-align: center;
+    }
+    .stylepic{
+        height: auto;
+        width: 30em;
+        margin-bottom: 1em;
+        margin-top:.5em;
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 800px){
+    .home{
+        font-weight: 300;
+        font-size: 1.4em;
+    }
+    .heading{
+        text-align: initial;
+    }
+    /* give margins to text sections */
+    .overview, .intro, .goal, .tenets, .personas, .scenarios, .charetteHold, .opening, .moodboard, .video, .prototype, .usability, .new, .style{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    /* design tenants*/
+    .tenbox{
+        margin-left: 5em;
+        margin-right: 5em;
+        padding: .5em;
+        background-color: #c6b7e9;
+    }
+    /* setting up the persona box */
+    .personaBox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #CAE7C1;
         margin-bottom: 2em;
-        padding-top: 1em;
+        padding-right: 2em;
+        padding-top: .5em;
     }
     .column{
         display: flex;
         flex-direction: column;
-        text-align: center;
+        margin-left: 2em;
     }
     .aspects{
         display:flex;
@@ -306,287 +397,42 @@ a{
         font-weight: bold;
     }
     .persona1{
-        height: 10em;
+        height: 20em;
+        margin: .5em;
         width: 15em;
         object-fit: cover;
     }
     .persona2{
-        height: 10em;
-        margin: 1em;
+        height: 20em;
+        margin: .5em;
         width: 15em;
-        object-fit: cover;
     }
-    /* charette */
+    /* setting up pictures for design charette */
+    .view{
+        display: block;
+    }
     .charetteHold{
         display:flex;
         flex-direction: column;
-        align-items: center;
         background-color: #c6b7e9;
-        padding: .5em;
-    }
-    .view{
-        display: none;
+        padding: 1em 5em;
+        margin: 0;
     }
     .charlink{
-        display: block;
-        font-weight: bold;
+        display:none;
     }
-    .charette1, .charette2{
-        display: none;
-    }
-    /* mood board */
-    .mood{
-        width:20em;
-    }
-    /* prototype */
-    /* mobile prototypes */
-    .mobile1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .mobileproto1{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .proto1{
-        height: 30em;
-        width: 15em;
-        margin-top:.5em;
-        margin-bottom: 1em;
-    }
-    .conference{
-        height: 30em;
-        width: 15em;
-        margin-top:.5em;
-        margin-bottom: 1em;
-    }
-    .chart{
-        width: 40em;
-        margin-bottom: 1em;
-        margin-top:.5em;
-    }
-    /* desktop prototypes */
-    .desktop1{
-        display: flex;
-        flex-direction: column;
-    }
-    .desktopproto1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .proto2{
-        width: 40em;
-        margin-bottom: 1em;
-        margin-top:.5em;
-    }
-
-    /* prototype 2 */
-    /* mobile chat features */
-    .chat, .mobileplus, .mobiletask, .desktask{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .proto3, .proto5, .proto7, .proto8{
-        height: 30em;
-        width: 15em;
-        margin-top:.5em;
-    }
-    .chatdesk, .deskplus{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .proto4, .proto6{
-        width: 40em;
-        margin-bottom: 1em;
-        margin-top:.5em;
-    }
-    .stylepic{
-        width: 40em;
-        margin-bottom: 1em;
-        margin-top:.5em;
-    }
-}
-/* phone */
-@media only screen and (max-device-width: 480px){
-    /* navigation */
-    .navbar{
-        display: flex; 
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom:2em;
-        padding: 1em;
-    }
-    .home{
-        font-weight: 300;
-        font-size: 1.4em;
-    }
-    .nav{
-        display:flex;
-        justify-content: space-between;
-        font-weight: bold;
-        font-size: 1em;
-    }
-    .work{
-        padding-right: 1em;
-    }
-    /* top banner */
-    .projectbox{
-        flex-direction: column-reverse;
-        text-align: center; 
-        margin-bottom: 1em;
-        align-items: center;
-    }
-    .cover{
-        width:15em;
-        height: 10em;
-    }
-    h3{
-        margin-top: 0em;
-    }
-    /* Overview */
-    .overview{
-        flex-direction: column;
-        margin-right: 1em;
-        margin-left: 1em;
-        margin-bottom: 1em;
-    }
-    /* give margins to text sections */
-    .intro, .goal, .tenets, .personas, .scenarios, .opening, .moodboard, .video, .prototype, .usability, .new, .style, .retrospectivetext{
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    /* personas */
-    .personaBox{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #CAE7C1;
-        margin-bottom: 2em;
-        padding-top: 1em;
-    }
-    .column{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .aspects{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 1em;
-    }
-    .aspects > h4{
-        font-weight: bold;
-    }
-    .persona1{
-        height: 10em;
-        width: 15em;
-        object-fit: cover;
-    }
-    .persona2{
-        height: 10em;
+    .char1{
+        height: auto;
         margin: 1em;
         width: 15em;
-        object-fit: cover;
     }
-    /* charette */
-    .charetteHold{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #c6b7e9;
-        padding: .5em;
-    }
-    .view{
-        display: none;
-    }
-    .charlink{
-        display: block;
-        font-weight: bold;
+    .char2{
+        height: 20em;
+        width: 35em;
     }
     .charette1, .charette2{
-        display: none;
-    }
-    /* mood board */
-    .mood{
-        width:20em;
-    }
-    /* prototype */
-    /* mobile prototypes */
-    .mobile1{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-    }
-    .mobileproto1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .proto1{
-        height: 30em;
-        width: 15em;
-        margin-top:.5em;
-        margin-bottom: 1em;
-    }
-    .conference{
-        height: 30em;
-        width: 15em;
-        margin-top:.5em;
-        margin-bottom: 1em;
-    }
-    .chart{
-        width: 20em;
-        margin-bottom: 1em;
-        margin-top:.5em;
-    }
-    /* desktop prototypes */
-    .desktop1{
-        display: flex;
-        flex-direction: column;
-    }
-    .desktopproto1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .proto2{
-        width: 20em;
-        margin-bottom: 1em;
-        margin-top:.5em;
-    }
-
-    /* prototype 2 */
-    /* mobile chat features */
-    .chat, .mobileplus, .mobiletask, .desktask{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .proto3, .proto5, .proto7, .proto8{
-        height: 30em;
-        width: 15em;
-        margin-top:.5em;
-    }
-    .chatdesk, .deskplus{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .proto4, .proto6{
-        width: 20em;
-        margin-bottom: 1em;
-        margin-top:.5em;
-    }
-    .stylepic{
-        width: 20em;
-        margin-bottom: 1em;
-        margin-top:.5em;
     }
 }
