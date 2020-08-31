@@ -57,7 +57,16 @@ a{
     font-size: 1em;
 }
 .work{
-    padding-right: 3em;
+    margin-right: 3em;
+}
+.home:hover{
+    border-bottom: .25em solid #CAE7C1;
+}
+.work:hover{
+    border-bottom: .25em solid #c6b7e9;
+}
+.about:hover{
+    border-bottom: .25em solid #c6b7e9;
 }
 /* top project banner */
 .projectbox{
