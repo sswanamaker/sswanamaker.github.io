@@ -304,6 +304,11 @@ a{
     .heading{
         text-align: center;
     }
+    /*persona*/
+    .aspects > h4{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
     /* mobile prototypes */
     .mobileproto1{
         display: flex;
