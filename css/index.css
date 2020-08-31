@@ -92,9 +92,13 @@ h1{
     flex-direction: column;
     align-items: center;
 }
-/* project 1 */
-.project1:hover{
-    background-color: #c6b7e9;
+.read{
+    text-decoration: underline;
+    color: #9E92BA;
+}
+.read:hover{
+    color: #625B74;
+    
 }
 
 /*tablet*/
