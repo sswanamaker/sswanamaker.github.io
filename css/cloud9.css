@@ -312,4 +312,8 @@ a{
         margin-left: 10em;
         margin-right: 10em;
     }
-
+    .retro{
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}

@@ -10,25 +10,58 @@ body *{
     padding-right: .5em; 
     padding-left:  .5em;
 }
-p{
-    margin-bottom: .5em;
-    line-height: 1.6;
+h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
 }
 h2{
-    font-size: 2em;
-    text-decoration: underline;
-    margin-bottom: .5em;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
 }
 h3{
-    font-size: 3em;
-    margin-bottom: .25em;
-    margin-top: .5em;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
 }
 h4{
-    font-weight: bolder;
-    font-size: 1.5em;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+p{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+.body2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+.caption1{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+}
+.caption2{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+.smalltext{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
 }
 /* navigation */
 ul{
@@ -60,24 +93,25 @@ a{
     margin-right: 3em;
 }
 .home:hover{
-    border-bottom: .25em solid #CAE7C1;
+    border-bottom: .25em solid #99ddcc;
 }
 .work:hover{
-    border-bottom: .25em solid #c6b7e9;
+    border-bottom: .25em solid #ffe2e2;
 }
 .about:hover{
-    border-bottom: .25em solid #c6b7e9;
+    border-bottom: .25em solid #ffe2e2;
 }
 /* top project banner */
 .projectbox{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     text-align: center; 
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 1.5em;
     margin-bottom: 1em;
-    background-color: #CAE7C1;
+}
+.text > h1 {
+    margin-bottom: .5em;
 }
 .text{
     display: flex;
@@ -85,36 +119,42 @@ a{
     align-items: center;
 }
 .cover{
-    width:15em;
-        height: 10em;
+    width:10em;
+    height: 13em;   
+}
+.link{
+    color: #99DDCC; 
+    margin-top: 1em;    
+}
+.link:hover{
+    text-decoration: underline;
+    color: #BAD7DF;
 }
 /* Overview */
 .overview{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    border: solid;
-    border-color: #c6b7e9;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: .5em;
+    margin-top: 1em;
 }
 .title{
     text-decoration: underline;
+    padding-bottom: .5em;
 }
 .heading{
-    text-align: center;
-}
-.report{
-    font-size: 1.5em;  
-}
-.report:hover{
-    color: #CAE7C1;
+    border-bottom: .25em solid #99DDCC;
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
 /*Objective*/
 .contentitems{
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-top: .5em;
     padding: .5em;
-    background-color: #c6b7e9;
+    background-color: #99DDCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 li{
     padding: .5em;
@@ -136,17 +176,16 @@ li{
     width: 15em;
 }
 .take{
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: .5em;
-    background-color: #CAE7C1;
+    margin-top: .5em;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /*treejack*/
 .tasks{
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: .5em;
-    background-color: #c6b7e9;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background-color: #99DDCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .tree1pic, .tree2pic, .tree3pic{
     height: auto;
@@ -172,52 +211,20 @@ li{
 }
 /*retrospective*/
 .retro{
-    background-color: #c6b7e9;
-    padding-right: .5em;
-    padding-left: .5em;
-}
-.retro > h3{
-    font-size: 2.5em;
-    font-weight: bolder;
-    text-align: center;
+    background-color: #99DDCC;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
 }
 
 @media only screen and (min-width: 600px){
-    .projectbox{
-        display: flex;
-        flex-direction: row-reverse;
-        text-align: center; 
-        justify-content: space-evenly;
-        padding: 1.5em;
-        margin-bottom: 2em;
-        background-color: #CAE7C1;
-    }
-    .text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .cover{
         width:20em;
         height: auto;
         margin-right: 1em;
     }
-    /* Overview */
-    .overview{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: solid;
-        border-color: #c6b7e9;
-        padding: .5em;
-        
-    }
-    .title{
-        text-decoration: underline;
-    }
-    .heading{
-        text-align: center;
-    }
+    
     /*content inventory*/
     .inventpic{
         height: auto;
@@ -245,33 +252,12 @@ li{
     }
 }
 @media only screen and (min-width: 800px){
-    /* top project banner */
-    .home{
-        font-weight: 300;
-        font-size: 1.4em;
-    }
-    .projectbox{
-        display: flex;
-        flex-direction: row-reverse;
-        text-align: center; 
-        justify-content: space-evenly;
-        padding: 1.5em;
-        margin-bottom: 2em;
-        background-color: #CAE7C1;
-    }
-    .text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .cover{
         width:30em;
         height: auto;
     }
     /*text format*/
-    .heading{
-        text-align: initial;
-    }
     .overview, .projover, .objective, .coninv, .card1, .card2, .card3, .iatest, .sitemap, .iatest2, .wireframe,  .start, .end{
         margin-left: 10em;
         margin-right: 10em;
@@ -312,17 +298,8 @@ li{
         width: auto;
     }
     /*retrospective*/
-    .retro > h3{
-        font-size: 2.5em;
-        font-weight: bolder;
-        text-align: initial;
-    }
     .retro{
-        margin-left: 0em;
-        margin-right: 0em; 
-        margin-bottom: -1em;
         padding-left: 10em;
         padding-right: 10em;
-        padding-bottom: 1em;
     }
 }
