@@ -10,19 +10,39 @@ body *{
     padding-right: .5em; 
     padding-left:  .5em;
 }
-p{
-    margin-bottom: .5em;
-    line-height: 1.6;
+h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
 }
 h2{
-    font-size: 2em;
-    text-decoration: underline;
-    margin-bottom: .5em;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
 }
 h3{
-    font-size: 3em;
-    margin-bottom: .25em;
-    margin-top: .5em;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+}
+p{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+.body2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+.caption2{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
 }
 /* navigation */
 ul{
@@ -54,75 +74,93 @@ a{
     margin-right: 3em;
 }
 .home:hover{
-    border-bottom: .25em solid #CAE7C1;
+    border-bottom: .25em solid #99ddcc;
 }
 .work:hover{
-    border-bottom: .25em solid #c6b7e9;
+    border-bottom: .25em solid #ffe2e2;
 }
 .about:hover{
-    border-bottom: .25em solid #c6b7e9;
+    border-bottom: .25em solid #ffe2e2;
 }
 /* introduction */
+.profile{
+    border-radius: 10em;
+    width: 15em;
+    height: 15em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
 .intro{
+    align-items: center;
     text-align: center;
     margin-right: 1em;
     margin-left: 1em;
     margin-bottom: 1em;
+    height: 100vh;
 }
 .name{
     text-align: center;
 }
-h1{
-    font-size: 3em;
-    margin-bottom: .5em;
-}
 #name{
-    color:#CAE7C1;
+    color:#99ddcc;
 }
 /* project boxes */
+.projects{
+    background-color: #bad7df;
+    margin: -.5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
 .projectbox{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
     text-align: center; 
     align-items: center;
-    padding: 1em;
-    margin-right: .5em;
-    margin-left: .5em;
+    padding:1em;
     margin-bottom: 2em;
-    background-color: #CAE7C1;
 }
 .cover{
-    height:10em;
-    width:15em;
+    height:auto;
+    width:10em;
+    margin-right: 1em;
+}
+.text > h2{
+    color: #f6f6f6;
 }
 .text{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 .read{
-    text-decoration: underline;
-    color: #9E92BA;
+    color: #f6f6f6;
 }
 .read:hover{
-    color: #625B74;
-    
+    color: #ffe2e2;   
+}
+.fa-chevron-circle-right{
+    color: #f6f6f6;
 }
 
 /*tablet*/
 @media only screen and (min-width: 600px){
+  
     /* project boxes */
     .projectbox{
         display: flex;
         flex-direction: row-reverse;
         text-align: center; 
         justify-content: space-evenly;
-        padding: 1em;
-        margin-right: 1em;
-        margin-left: 1em;
+        padding:1em;
         margin-bottom: 2em;
-        background-color: #CAE7C1;
+    }
+    .text > h2{
+        margin-bottom: 1em;
+    }
+    .read{
+        margin-top: .5em;
     }
     .text{
         display: flex;
@@ -130,9 +168,9 @@ h1{
         align-items: center;
     }
     .cover{
-        height:auto;
-        width:20em;
-        margin:1em;
+        height:22em;
+        width:auto;
+        
     }
 }
 /*desktop*/
@@ -142,38 +180,34 @@ h1{
         font-weight: 300;
         font-size: 1.4em;
     }
-    /* introduction */
-    .intro{
-        margin-right: 10em;
-        margin-left: 10em;
-        margin-bottom: 1em;
+    /*intro*/
+    .profile{
+        border-radius: 10em;
+        width: 20em;
+        height: 20em;
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
-    
-    h1{
-        font-size: 4em;
-        margin-bottom: .5em;
-    }
-
     /* project boxes */
     .projectbox{
         display: flex;
         flex-direction: row-reverse;
         text-align: center; 
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 1.5em;
-        margin-right: 10em;
-        margin-left: 10em;
-        margin-bottom: 2em;
-        background-color: #CAE7C1;
+        margin-left: 5em;
+        margin-right: 5em;
     }
+    
     .text{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
     .cover{
-        height:auto;
-        width:30em;
-        margin:1em;
+        height:20em;
+        width:auto;
+        margin-right: 4em;
     }
 }

@@ -6,24 +6,60 @@ body *{
 #wrapper{
     margin-right: auto; 
     margin-left:  auto;
-
     padding-right: .5em; 
     padding-left:  .5em;
 }
-p{
-    margin-bottom: .5em;
-    line-height: 1.6;
+h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+}
+h2{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
 }
 h3{
-    font-size: 3em;
-    margin-bottom: .25em;
-    margin-top: .5em;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
 }
 h4{
-    font-weight: bolder;
-    font-size: 1.5em;
-    margin-top: .5em;
-    margin-bottom: .5em;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+p{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+.body2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+.caption1{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+}
+.caption2{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+.smalltext{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
 }
 /* navigation */
 ul{
@@ -38,8 +74,7 @@ a{
     justify-content: space-between;
     align-items: center;
     margin-bottom:2em;
-    padding-top: 1em;
-    
+    padding-top: 1em;   
 }
 .home{
     font-weight: 300;
@@ -55,24 +90,25 @@ a{
     margin-right: 3em;
 }
 .home:hover{
-    border-bottom: .25em solid #CAE7C1;
+    border-bottom: .25em solid #99ddcc;
 }
 .work:hover{
-    border-bottom: .25em solid #c6b7e9;
+    border-bottom: .25em solid #ffe2e2;
 }
 .about:hover{
-    border-bottom: .25em solid #c6b7e9;
+    border-bottom: .25em solid #ffe2e2;
 }
 /* top project banner */
 .projectbox{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     text-align: center; 
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 1.5em;
     margin-bottom: 1em;
-    background-color: #CAE7C1;
+}
+.text > h1 {
+    margin-bottom: .5em;
 }
 .text{
     display: flex;
@@ -80,37 +116,38 @@ a{
     align-items: center;
 }
 .cover{
-    width:15em;
-        height: 10em;
+    width:10em;
+    height: 13em;   
 }
 /* Overview */
 .overview{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    border: solid;
-    border-color: #c6b7e9;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: .5em;
+    margin-top: 1em;
 }
 .title{
     text-decoration: underline;
+    padding-bottom: .5em;
 }
 .heading{
-    text-align: center;
+    border-bottom: .25em solid #99DDCC;
+    margin-top: 1em;
+    margin-bottom: .5em;
 }
 /* design tenants*/
-.tenbox{
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: .5em;
-    background-color: #c6b7e9;
-}
+
 /* personas */
 .personaBox{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #CAE7C1;
+    background-color: #99DDCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 1em;
     margin-bottom: 2em;
     padding: .5em;
 }
@@ -124,15 +161,17 @@ a{
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 1em;
+    
 }
-.aspects > h4{
-    font-size: 1em;
-    font-weight: bold;
+.aspects > h3{
+    color: #F6F6F6;
 }
+
 .persona1{
     height: 10em;
     width: 15em;
     object-fit: cover;
+    margin: 1em;
 }
 .persona2{
     height: 10em;
@@ -140,20 +179,27 @@ a{
     width: 15em;
     object-fit: cover;
 }
+/*scenario*/
+.scenarios > h3{
+    margin-top: .5em;
+}
 /* charette */
 .charetteHold{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: #c6b7e9;
+    background-color: #ffe2e2;
     padding: .5em;
+}
+.opening > .caption1{
+    margin-top: .5em;
+
 }
 .view{
     display: none;
 }
 .charlink{
     display: block;
-    font-weight: bold;
 }
 .charette1, .charette2{
     display: none;
@@ -167,15 +213,24 @@ a{
     height: auto;
 }
 /*video*/
-#link{
-    color: #CAE7C1; 
+.link{
+    color: #99DDCC; 
+    
+}
+.link:hover{
+    text-decoration: underline;
+    color: #BAD7DF;
 }
 /* mobile prototypes */
+.mobile1 > h3 {
+    margin-top: .5em;
+}
 .mobileproto1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #CAE7C1;
+    background-color: #BAD7DF;
+    margin: .5em 0em;
 }
 .proto1{
     height: auto;
@@ -190,11 +245,15 @@ a{
     margin-bottom: 1em;
 }
 /* desktop prototypes */
+.desktop1 > h3 {
+    margin-top: .5em;
+}
 .desktopproto1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #CAE7C1;
+    background-color: #BAD7DF;
+    margin: .5em 0em;
 }
 .proto2{
     height: auto;
@@ -213,17 +272,18 @@ a{
     margin-top:.5em;
 }
 .outbox{
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: .5em 1em;
     padding: .5em;
-    background-color: #c6b7e9;
+    background: #F6F6F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* hi-fi prototype */
 .chat, .mobileplus, .mobiletask, .desktask{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #CAE7C1;
+    background-color: #FFE2E2;
+    margin: .5em 0em;
 }
 .proto3, .proto5, .proto7, .proto8{
     height: auto;
@@ -235,13 +295,17 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #CAE7C1;
+    background-color: #FFE2E2;
+    margin: .5em 0em;
 }
 .proto4, .proto6{
     height: auto;
     width: 15em;
     margin-bottom: 1em;
     margin-top:.5em;
+}
+.calendar, .plus, .tasks > h3{
+    margin-top: .5em;
 }
 /* style tile */
 .stylebox{
@@ -255,74 +319,34 @@ a{
 }
 /*retrospective*/
 .retro{
-    background-color: #c6b7e9;
-    margin-bottom: -1em;
-    padding-left: .5em;
-    padding-right: .5em;
+    background-color: #99DDCC;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-bottom: 1em;
 }
-.retro > h3{
-    font-size: 2.5em;
-    font-weight: bolder;
-    text-align: center;
-}
+
 
 /*tablet*/
 @media only screen and (min-width: 600px){
-    .projectbox{
-        display: flex;
-        flex-direction: row-reverse;
-        text-align: center; 
-        justify-content: space-evenly;
-        padding: 1.5em;
-        margin-bottom: 2em;
-        background-color: #CAE7C1;
-    }
-    .text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    /*projectbox*/
     .cover{
         width:20em;
         height: auto;
-        margin-right: 1em;
-    }
-    /* Overview */
-    .overview{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border: solid;
-        border-color: #c6b7e9;
-        padding: .5em;
-        
-    }
-    .title{
-        text-decoration: underline;
-    }
-    .heading{
-        text-align: center;
-    }
-    /*persona*/
-    .aspects > h4{
-        font-size: 1.5em;
-        font-weight: bold;
-    }
+    }    
     /* mobile prototypes */
     .mobileproto1{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        background-color: #CAE7C1;
+        background-color: #BAD7DF;
     }
     /* desktop prototypes */
     .desktopproto1{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #CAE7C1;
+        background-color: #BAD7DF;
     }
     .proto2{
         height: auto;
@@ -346,7 +370,7 @@ a{
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        background-color: #CAE7C1;
+        background-color: #FFE2E2;
     }
     .proto4, .proto6{
         height: auto;
@@ -368,26 +392,13 @@ a{
 
 /*desktop*/
 @media only screen and (min-width: 800px){
-    .home{
-        font-weight: 300;
-        font-size: 1.4em;
-    }
-    .heading{
-        text-align: initial;
-    }
     .projectbox{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         text-align: center; 
         justify-content: space-evenly;
-        padding: 1.5em;
-        margin-bottom: 2em;
-        background-color: #CAE7C1;
-    }
-    .text{
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        margin-bottom: 1em;
     }
     .cover{
         width:30em;
@@ -399,19 +410,12 @@ a{
         margin-left: 10em;
         margin-right: 10em;
     }
-    /* design tenants*/
-    .tenbox{
-        margin-left: 5em;
-        margin-right: 5em;
-        padding: .5em;
-        background-color: #c6b7e9;
-    }
     /* setting up the persona box */
     .personaBox{
         display: flex;
         flex-direction: row;
         align-items: center;
-        background-color: #CAE7C1;
+        background-color: #99DDCC;
         margin-bottom: 2em;
         padding-right: 2em;
         padding-top: .5em;
@@ -426,9 +430,6 @@ a{
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 1em;
-    }
-    .aspects > h4{
-        font-weight: bold;
     }
     .persona1{
         height: 20em;
@@ -448,7 +449,7 @@ a{
     .charetteHold{
         display:flex;
         flex-direction: column;
-        background-color: #c6b7e9;
+        background-color: #FFE2E2;
         padding: 1em 5em;
         margin: 0;
     }
