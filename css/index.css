@@ -175,11 +175,6 @@ a{
 }
 /*desktop*/
 @media only screen and (min-width: 800px){
-    /*navbar*/
-    .home{
-        font-weight: 300;
-        font-size: 1.4em;
-    }
     /*intro*/
     .profile{
         border-radius: 10em;
