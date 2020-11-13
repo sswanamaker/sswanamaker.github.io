@@ -89,6 +89,7 @@ a{
     height: 15em;
     margin-top: 5em;
     margin-bottom: 5em;
+    object-fit: cover;
 }
 .intro{
     align-items: center;

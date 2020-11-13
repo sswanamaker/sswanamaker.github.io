@@ -1,0 +1,103 @@
+body *{
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1em;
+}
+#wrapper{
+    margin-right: auto; 
+    margin-left:  auto;
+
+    padding-right: .5em; 
+    padding-left:  .5em;
+}
+h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+}
+h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+}
+h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+}
+h4{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+p{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+.body2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+.caption1{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+}
+.caption2{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+.smalltext{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+}
+/* navigation */
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:2em;
+    padding-top: 1em;
+    
+}
+.home{
+    font-weight: 300;
+    font-size: 1em;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1em;
+}
+.work{
+    margin-right: 3em;
+}
+.home:hover{
+    border-bottom: .25em solid #99ddcc;
+}
+.work:hover{
+    border-bottom: .25em solid #ffe2e2;
+}
+.about:hover{
+    border-bottom: .25em solid #ffe2e2;
+}
