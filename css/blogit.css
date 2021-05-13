@@ -1,0 +1,305 @@
+body *{
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1em;
+}
+#wrapper{
+    margin-right: auto; 
+    margin-left:  auto;
+
+    padding-right: .5em; 
+    padding-left:  .5em;
+}
+h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+}
+h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+}
+h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+}
+h4{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+}
+p{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+.body2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+.caption1{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+}
+.caption2{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+.smalltext{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+}
+/* navigation */
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:2em;
+    padding-top: 1em;
+    
+}
+.home{
+    font-weight: 300;
+    font-size: 1em;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1em;
+}
+.work{
+    margin-right: 3em;
+}
+.home:hover{
+    border-bottom: .25em solid #99ddcc;
+}
+.work:hover{
+    border-bottom: .25em solid #ffe2e2;
+}
+.about:hover{
+    border-bottom: .25em solid #ffe2e2;
+}
+/* top project banner */
+.projectbox{
+    display: flex;
+    flex-direction: row;
+    text-align: center; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.text > h1 {
+    margin-bottom: .5em;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cover{
+    width:10em;
+    height: 13em;   
+}
+.link{
+    color: #99DDCC; 
+    margin-top: 1em;    
+}
+.link:hover{
+    text-decoration: underline;
+    color: #BAD7DF;
+}
+/* Overview */
+.overview{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: .5em;
+    margin-top: 1em;
+}
+.title{
+    text-decoration: underline;
+    padding-bottom: .5em;
+}
+.heading{
+    border-bottom: .25em solid #99DDCC;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+/*Objective*/
+.contentitems{
+    margin-top: .5em;
+    padding: .5em;
+    background-color: #99DDCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+li{
+    padding: .5em;
+}
+.indent{
+    margin-left: 1em;
+}
+/*Content Inventory*/
+.pic{
+    text-align: center;
+}
+.inventpic{
+    height: auto;
+    width: 15em;
+}
+/*Card Sort 1*/
+.card1pic, .card2pic, .card3pic{
+    height: auto;
+    width: 15em;
+}
+.take{
+    margin-top: .5em;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*treejack*/
+.tasks{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    background-color: #99DDCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.tree1pic, .tree2pic, .tree3pic{
+    height: auto;
+    width: 15em;
+}
+/*sitemap*/
+.sitemap1, .sitemap2{
+    height: auto;
+    width: 15em;
+}
+/*chalkmark*/
+.chalktestpic{
+    height: 15em;
+    width: auto;
+}
+.chalkpic{
+    text-align: center;
+}
+/*wireframe*/
+.wirepic{
+    height: 15em;
+    width: auto;
+}
+/*retrospective*/
+.retro{
+    background-color: #99DDCC;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 600px){
+    
+    .cover{
+        width:20em;
+        height: auto;
+        margin-right: 1em;
+    }
+    
+    /*content inventory*/
+    .inventpic{
+        height: auto;
+        width: 30em;
+    }
+    /*Card Sort 1*/
+    .card1pic, .card2pic, .card3pic{
+        height: auto;
+        width: 30em;
+    }
+    /*treejack*/
+    .tree1pic, .tree2pic, .tree3pic{
+        height: auto;
+        width: 30em;
+    }
+    /*chalkmark*/
+    .chalkpic{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .chalktestpic{
+        height: 15em;
+        width: auto;
+    }
+}
+@media only screen and (min-width: 800px){
+    
+    .cover{
+        width:30em;
+        height: auto;
+    }
+    /*text format*/
+    .overview, .projover, .objective, .coninv, .card1, .card2, .card3, .iatest, .sitemap, .iatest2, .wireframe,  .start, .end{
+        margin-left: 10em;
+        margin-right: 10em;
+    }
+    /*content inventory*/
+    .inventpic{
+        height: auto;
+        width: 40em;
+    }
+    /*Card Sort 1*/
+    .card1pic, .card2pic, .card3pic{
+        height: auto;
+        width: 40em;
+    }
+    /*treejack*/
+    .tree1pic, .tree2pic, .tree3pic{
+        height: auto;
+        width: 40em;
+    }
+    /*sitemap*/
+    .sitemap1, .sitemap2{
+        height: auto;
+        width: 30em;
+    }
+    /*chalkmark*/
+    .chalkpic{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .chalktestpic{
+        height: 15em;
+        width: auto;
+    }
+    /*wireframe*/
+    .wirepic{
+        height: 20em;
+        width: auto;
+    }
+    /*retrospective*/
+    .retro{
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}

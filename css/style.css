@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+ font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-weight: normal;
+  background: #fafafa;
+  color: #373d3f; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+a {
+  color: #ED80D4;
+  text-decoration: none;
+  background-color: transparent; }
+  a:hover {
+    color: #18345C;
+    text-decoration: none; }
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  font-family: 'David Libre', serif;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000; }
+
+h1, .h1 {
+  font-size: 3.052rem; }
+
+h2, .h2 {
+  font-size: 2.441rem; 
+  margin-top: 2rem; }
+
+h3, .h3 {
+  font-size: 1.953rem; }
+
+h4, .h4 {
+  font-size: 1.563rem; }
+
+h5, .h5 {
+  font-size: 1rem;
+  font-weight: 700; }
+
+
+/*pictures*/
+
+
+
+/*color components*/
+.primary1 {
+  background-color:#fafafa;
+  border-color:#373d3f;
+  height: 100px;
+  width: 100px;
+}
+.primary2 {
+  background-color:#c1a1cc;
+  height: 100px;
+  width: 100px;
+}
+.primary3 {
+  background-color:#accca1;
+  height: 100px;
+  width: 100px;
+}
+.secondary1{
+  background-color:#ED80D4;
+  height: 100px;
+  width: 100px;
+}
+.secondary2{
+  background-color:#18345C;
+  height: 100px;
+  width: 100px;
+}
+.text1{
+  background-color:#000000;
+  height: 100px;
+  width: 100px;
+}
+.text2{
+  background-color:#373d3f;
+  height: 100px;
+  width: 100px;
+}
+
+/*frame component*/
+.framebox{
+  height: 100px;
+}
+.bg-white{
+  background-color: #fafafa;
+}
+.bg-violet{
+  background-color: #c1a1cc;
+}
+.bg-green{
+  background-color: #accca1;
+}
+.bg-blue{
+  background-color: #18345C;
+}
+.logo{
+  max-width:50px;
+}
+#colortextviolet{
+  color: #c1a1cc;
+}
+.colortextwhite{
+  color: #fafafa;
+}
+.opacity-3 {
+  opacity:0.6!important;
+}
+
+/*carousel*/
+.carousel-control-prev {
+
+  font-size: 40px;
+  color: #444;
+}
+
+.carousel-control-next {
+
+  font-size: 40px;
+  color: #444;
+}

@@ -1,88 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Home</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e700142528.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-<div id="wrapper">
-
-    <!--top navigation-->
-    <div class="header">
-        <ul class="navbar">
-            <li><a class="home" href="index.html">Samantha Wanamaker</a></li>
-            <div class="nav">
-                <li><a class="work" href="#work">Work</a>
-                <li><a class="about" href="https://www.linkedin.com/in/samantha-wanamaker-922752180">About</a></li>
-            </div>
-        </ul>
-    </div>
-    <!--introduction paragraph-->
-    <div class="intro">
-        <img class="profile" src="images/profile.jpg">
-        <h1 class="name">Hi! I'm <span id="name">Samantha</span>!</h1>
-        <p>Taking my love of psychology and helping people to create products
-        that users will love.</p>
-        <!--<p>I am completing my masters in Human Computer Interaction at DePaul
-        University. After finishing my  Bachelors of Science in Psychology at
-        University of California, Davis, I began working as a teacher for
-        autistic students at a charity organization. Learning how to teach
-        students who require different methods to process information, I began
-        to be interested in user experience.</p> 
-        <p>This past year, the courses that I have taken have taught me skills
-        in identifying target users and creating scenarios and storyboards to
-        help facilitate development of a product geared towards users. I have
-        also developed skills in creating wireframes and prototypes, and using
-        iterative development to improve on those prototypes by testing it
-        against users.</p>
-        <p>I am looking  to implement and improve on my
-        skills in any opportunity that I receive.</p>-->
-    </div>
-    <!--list of projects-->
-    <div class="projects">
-        <div class="projectbox" id="work">
-            <div class="text">
-                <h2>D2L coLab</h2>
-                <p class="caption2">Designing a tool to promote collaborative
-                projects between DePaul University students.</p>
-                <a class="project1" href="project1_coLab.html">
-                <p class="body2 read">Read More <i class="fas
-                    fa-chevron-circle-right"></i></p></a>
-            </div>
-            <img class="cover" src="images/coLab1.jpg">
-        </div>
-        <div class="projectbox">
-            <div class="text">
-                <h2>Cloud9</h2>
-                <p class="caption2">An exploratory research project that aims to understand the
-                    user's need for a technology-based solution to help them store,
-                    organize, and distribute digital assets post-mortem.</p>
-                <a class="project1" href="cloud9.html"><p class="body2
-                read">Read More <i class="fas
-                fa-chevron-circle-right"></i></p></a>
-            </div>
-            <img class="cover" src="images/cloud9_3.jpg">
-        </div>
-        <div class="projectbox">
-            <div class="text">
-                <h2>IA Redesign</h2>
-                <p class="caption2">Redesign of the Legal Aid Society of San Deigo website to create
-                better navigation and information presentation so that users can
-                quickly and efficiently find what they need.</p>
-                <a class="project1" href="iaredesign.html"><p class="body2
-                read">Read More <i class="fas
-                fa-chevron-circle-right"></i></p></a>
-            </div>
-            <img class="cover" src="images/iaredesign1.jpg">
-            
-        </div>
-    </div>
     
-</div>
+    <head>
+        <title>Home</title>
+        <link rel="icon" href="images/fcolor_logo.svg" type="image/gif" sizes="16x16">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- This is where you put your google font in if applicable -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Roboto&display=swap" rel="stylesheet">
+    
+    
+    
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="images/fcolor_logo.svg" alt="logo" width="50" height="50">
+                </a>
+                <a class="d-none d-md-block navbar-brand" href="index.html">
+                    Samantha Wanamaker
+                </a>
+        
+                <!-- Toggle button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <div class="navbar-toggler-icon"></div>
+                </button>
+        
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- Right links -->
+                    <ul class="navbar-nav ml-auto">
+                
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                
+                    </ul> <!-- Right links -->
+                </div> <!-- Collapsible wrapper -->
+            </div><!-- Container wrapper -->
+        </nav><!-- Navbar -->
+    
+         <!-- Page Content  -->
+        <div class = "container">
+            <div class = "row text-center mx-auto d-block mt-3">
+                <div class="col-12">
+                    <img class="img-fluid rounded-circle pb-3" alt="profile"
+                        src="images/profile2.jpg"
+                        data-holder-rendered="true" width="350">
+                    <h1>Hi, I'm <span id="colortextviolet">Samantha</span>!</h1>
+                    <p>Taking my love of psychology and helping people to create
+                    products that users will love.</p>
+                    <!--<p>I am completing my masters in Human Computer Interaction at DePaul
+                        University. After finishing my  Bachelors of Science in Psychology at
+                        University of California, Davis, I began working as a teacher for
+                        autistic students at a charity organization. Learning how to teach
+                        students who require different methods to process information, I began
+                        to be interested in user experience.</p> 
+                        <p>This past year, the courses that I have taken have taught me skills
+                        in identifying target users and creating scenarios and storyboards to
+                        help facilitate development of a product geared towards users. I have
+                        also developed skills in creating wireframes and prototypes, and using
+                        iterative development to improve on those prototypes by testing it
+                        against users.</p>
+                        <p>I am looking  to implement and improve on my
+                        skills in any opportunity that I receive.</p>-->
+                </div><!-- col  -->
+            </div><!-- Row  -->
+        </div><!-- Container -->
+        
+        <!--list of projects-->
+        <div class="container-fluid" id="projects" style="background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.582) 0%,rgba(255, 255,
+        255, 0.781) 100%), url('images/folk-pattern3.png'); ">
+            <a class="text-dark" href="project1_coLab.html">
+                <div class="row text-center justify-content-around mt-5 p-3 pt-4">
+                  <div class="col-sm-6 col-md-6 col-lg-4">
+                      <img class="img-fluid mx-auto d-block" alt="colab"
+                      src="images/coLab.png" style="width:300px; height: 200px;">
+                  </div> <!--col-->
+                  <div class="col-sm-6 col-md-6 col-lg-8 align-self-center">
+                      <h2>D2L coLab</h2>
+                      <p class="pt-2">Designing a tool to promote collaborative
+                          projects between DePaul University students.</p>
+                  </div> <!--col-->
+                </div> <!--row-->
+              </a>            
+    
+              <a class="text-dark" href="cloud9.html">
+                <div class="row text-center justify-content-around mt-5 p-3 pt-4">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <img class="img-fluid mx-auto d-block" alt="cloud9"
+                        src="images/cloud9.png" style="width:300px; height: 200px;">
+                    </div> <!--col-->
+                    <div class="col-sm-6 col-md-6 col-lg-8 align-self-center">
+                        <h2>Cloud9</h2>
+                        <p class="pt-2">An exploratory research project that aims to
+                        understand the user's need for a technology-based
+                        solution to help them store, organize, and distribute
+                        digital assets post-mortem.</p>
+                    </div> <!--col-->
+                </div> <!--row-->
+            </a>
+
+            <a class="text-dark" href="iaredesign.html">
+                <div class="row text-center justify-content-around mt-5 p-3 pt-4">
+                  <div class="col-sm-6 col-md-6 col-lg-4">
+                      <img class="img-fluid mx-auto d-block" alt="iadesign"
+                      src="images/iaredesign.png" style="width:300px; height: 200px;">
+                  </div> <!--col-->
+                  <div class="col-sm-6 col-md-6 col-lg-8 align-self-center">
+                      <h2>IA Redesign</h2>
+                      <p class="pt-2">Redesign of the Legal Aid Society of San Deigo website to
+                      create better navigation and information presentation so
+                      that users can quickly and efficiently find what they
+                      need.</p>
+                  </div> <!--col-->
+                </div> <!--row-->
+              </a>
+        </div><!--list of projects-->
+        
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+<footer class="page-footer">
+    <!-- Copyright -->
+    <div class="d-none d-md-block bg-blue text-white text-right p-3">
+      <p>© 2021 Copyright: Samantha Wanamaker</p>
+    </div>
+    <div class="d-block d-xs-block d-sm-block d-md-none bg-blue text-white text-center p-3">
+        <p>© 2021 Copyright: Samantha Wanamaker</p>
+      </div>
+</html>
